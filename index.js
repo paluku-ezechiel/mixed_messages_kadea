@@ -20,25 +20,10 @@ let citations = [
     ["Les gagnants trouvent des moyens, les perdants des excuses…", "F. D. Roosevelt"],
     ["Vous n’êtes jamais trop vieux pour vous fixer de nouveaux buts, ou rendre vos rêves réalité.", "C.S. Lewis"],
     ["Un pessimiste voit la difficulté dans chaque opportunité. Un optimiste voit une opportunité dans chaque difficulté.", "Winston Churchill"]
-  ];let dernier = 0;
-let nombreAleatoire = 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  ];
+  
+  let dernier = 0;
+  let nombreAleatoire = 0;
 
 function genererNombreAleatoire(max){
     return Math.floor(Math.random() * Math.floor(max));
@@ -52,3 +37,4 @@ do{
 
 let citation = citations[nombreAleatoire][0] + ", " + citations[nombreAleatoire][1];
 dernier      = nombreAleatoire;
+console.log(citation);
